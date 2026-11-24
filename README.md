@@ -31,8 +31,8 @@ Estos comandos reconstruyen una línea base y comprueban que cada archivo regist
 
 ```bash
 git fetch --tags
-git checkout LB-ASEG-01
-sha256sum -c 08_Configuracion_y_versiones/LB-ASEG-01.sha256
+git checkout LB-ASEG-02
+sha256sum -c 08_Configuracion_y_versiones/LB-ASEG-02.sha256
 git checkout main
 ```
 

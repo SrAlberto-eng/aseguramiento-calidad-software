@@ -60,3 +60,17 @@ La revisión técnica del 24 de noviembre de 2026 encontró 12 hallazgos en los 
 | 12 | RF-34 | No dice que el código pasa a estado «registrado». | Menor | Ninguno | Abierto. Falta entregarlo al equipo de desarrollo. |
 
 La entrega al equipo de desarrollo es la otra mitad de la acción correctiva y se hace en la revisión semanal del 27 de noviembre de 2026.
+
+## Defectos y hallazgos del plan de pruebas
+
+La ejecución en seco del plan de pruebas 1.0, el 24 de noviembre de 2026, encontró cinco defectos en la ERS. Cada uno está en un issue del repositorio con los pasos para reproducirlo. Su origen es la ERS y la causa raíz más cercana es la de reglas sin especificación verificable.
+
+| Issue | Caso | Síntoma | Severidad | Relación | Seguimiento |
+|---|---|---|---|---|---|
+| #15 | CP-02 | La ERS no define qué hace el sistema cuando se registra un código que no existe. | Mayor | Nuevo | Nuevo. Falta entregarlo al equipo de desarrollo. |
+| #16 | CP-03 | Un alumno puede registrar dos códigos de la misma actividad y sumar dos asistencias. | Crítica | Defecto 1 y hallazgo 1 | Nuevo. Su corrección es la SC-03. |
+| #17 | CP-04 | Una lista CSV autorizada integra asistencias fuera de plazo, de alumnos inhabilitados y ya registradas por código. | Crítica | Hallazgos 4 y 5 | Nuevo. Falta entregarlo al equipo de desarrollo. |
+| #18 | CP-07 | El responsable de registros puede eliminar un código que un alumno ya registró. | Crítica | Nuevo | Nuevo. Falta entregarlo al equipo de desarrollo. |
+| #19 | CP-09 | La ERS no define cómo se cuenta y se solicita un segundo crédito. | Mayor | Hallazgo 9 | Nuevo. Falta entregarlo al equipo de desarrollo. |
+
+Al escribir los resultados esperados aparecieron además tres requisitos ambiguos. La ERS no dice si el día de la actividad cuenta en el plazo de 15 días, si las etapas disciplinaria y terminal comparten el tope de créditos, ni si el bloqueo tras 5 intentos fallidos aplica al inicio con Google institucional. Se entregan junto con los defectos.

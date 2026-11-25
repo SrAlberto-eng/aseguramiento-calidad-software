@@ -21,10 +21,11 @@ Cada carpeta lleva el número del componente del SQAP al que da sustento.
 | `03_Organizacion_y_roles` | El Lab 2.4.1, con los roles y el costo de la mala calidad |
 | `05_Riesgos` | La matriz de riesgos y el reporte de la Clase 4 |
 | `06_Revisiones_evaluacion_y_auditorias` | El modelo de calidad, el plan y el informe de evaluación, la revisión técnica de la especificación y su auditoría |
+| `07_Pruebas` | El plan de pruebas, con sus casos y su ejecución |
 | `08_Configuracion` | El registro del estado de la configuración y los manifiestos de las líneas base |
 | `09_Problemas_acciones_y_mejora` | El análisis de causa raíz, con la matriz defecto-fuente |
 
-La carpeta `07_Pruebas` se crea en la Clase 15 con el plan de pruebas. Dentro de cada carpeta, `obsoletas` guarda las versiones superadas de los elementos de configuración.
+Dentro de cada carpeta, `obsoletas` guarda las versiones superadas de los elementos de configuración.
 
 ## Nombres de archivo
 
@@ -32,8 +33,9 @@ Los archivos se nombran con la forma `<actividad>_<Titulo>_v<X.Y>_<AAAA-MM-DD>.<
 
 ## Elementos de configuración y registros
 
-Un elemento de configuración es un documento que se entrega, cambia, usan varias personas y cuyo error es costoso. En este repositorio son cuatro:
+Un elemento de configuración es un documento que se entrega, cambia, usan varias personas y cuyo error es costoso. En este repositorio son cinco:
 
+- `EC-07` el plan de pruebas.
 - `EC-08` el SQAP.
 - `EC-09` la ficha del proyecto y del cliente.
 - `EC-10` la matriz de riesgos.
@@ -53,6 +55,8 @@ Para comprobar que una línea base está completa:
 git checkout LB-SQAP-01
 sha256sum -c 08_Configuracion/LB-SQAP-01.sha256
 ```
+
+La auditoría física completa, que además revisa el registro del estado, los archivos sin registrar, los commits directos en `main` y los marcadores de conflicto, se hace desde un clon nuevo con `python3 08_Configuracion/verificar_linea_base.py LB-SQAP-04`, cambiando la etiqueta.
 
 ## Control de versiones
 

@@ -17,6 +17,8 @@ La severidad usa los criterios del análisis de causa raíz. Un defecto crítico
 
 La columna de seguimiento dice en qué estado está cada defecto y qué falta para cerrarlo. Un defecto se cierra solo cuando se verifica su corrección.
 
+En el glosario de la ERS, sesión y actividad son sinónimos. Por eso el defecto 1 habla de alumno y sesión, y la solicitud SC-03 de alumno y actividad. Las dos frases piden la misma restricción.
+
 ## Defectos del producto
 
 | Núm. | Defecto | Detectado con | Origen y tipo | Severidad | Causa raíz | Seguimiento |

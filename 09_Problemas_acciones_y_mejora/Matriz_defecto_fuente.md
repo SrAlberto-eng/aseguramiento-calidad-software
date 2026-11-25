@@ -23,7 +23,7 @@ En el glosario de la ERS, sesión y actividad son sinónimos. Por eso el defecto
 
 | Núm. | Defecto | Detectado con | Origen y tipo | Severidad | Causa raíz | Seguimiento |
 |---|---|---|---|---|---|---|
-| 1 | La tabla de asistencias no tiene una restricción única sobre el alumno y la sesión. Una asistencia se puede registrar dos veces. | Revisión por escenarios | Diseño, omisión | Crítica | Reglas sin especificación verificable | Abierta. Los hallazgos 1 y 5 de la revisión técnica confirman que la ERS tampoco lo impide. |
+| 1 | La tabla de asistencias no tiene una restricción única sobre el alumno y la sesión. Una asistencia se puede registrar dos veces. | Revisión por escenarios | Diseño, omisión | Crítica | Reglas sin especificación verificable | Abierta. Los hallazgos 1 y 5 de la revisión técnica confirman que la ERS tampoco lo impide. Su corrección es la solicitud de cambio SC-03, aprobada por el comité y en espera del cliente. |
 | 2 | El requisito de topes no dice el valor, el periodo ni qué pasa con lo que lo rebasa. | Revisión de cobertura | Requisitos, incompleto | Crítica | Reglas sin especificación verificable | Abierta |
 | 3 | El recordatorio de un evento próximo no tiene entidad ni pantalla. | Revisión de cobertura | Diseño, omisión | Menor | Requisitos sin versión ni prioridad | Abierta |
 | 4 | La exportación del historial de créditos no tiene pantalla ni función. | Revisión de cobertura | Diseño, omisión | Menor | Requisitos sin versión ni prioridad | Abierta |
@@ -35,6 +35,8 @@ En el glosario de la ERS, sesión y actividad son sinónimos. Por eso el defecto
 | 10 | Un mensaje de validación siempre dice que falta la carrera, sin importar el campo que falte. | Análisis estático | Código, lógica | Menor | Backend sin revisión automática | Abierta |
 | 11 | El servidor revela en una cabecera el framework que usa. | Análisis estático | Código, configuración | Mayor | Backend sin revisión automática | Abierta |
 | 12 | Hay constantes sin uso y un comentario pendiente. | Análisis estático | Código, mantenibilidad | Menor | Backend sin revisión automática | Abierta |
+
+Solo el defecto 1 tiene solicitud de cambio, porque cambia una regla del programa y el comportamiento del producto. El defecto 2 todavía no puede tenerla, porque depende de que la coordinación defina el tope. Los defectos 3 a 12 están en elementos de 8=1 que aún no entran a una línea base, así que el equipo de desarrollo los corrige con su flujo normal y aquí se anota cuando se verifiquen. Las solicitudes de cambio están en la hoja de solicitudes del registro del estado.
 
 Los defectos 1 a 9 salen de la evaluación de la calidad de la Clase 10. Los defectos 10 a 12 salen del análisis estático del Lab 2.4.1.
 

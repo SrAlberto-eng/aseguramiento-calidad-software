@@ -56,7 +56,7 @@ sha256sum -c 08_Configuracion/LB-SQAP-01.sha256
 
 ## Control de versiones
 
-El repositorio sigue GitHub Flow. La rama `main` siempre tiene la versión vigente de los documentos y nadie escribe directo en ella. Cada cambio se hace en una rama corta, entra por una solicitud de integración y se fusiona después de revisarse. El plan completo está en la sección 8.8 del SQAP.
+El repositorio sigue GitHub Flow. La rama `main` siempre tiene la versión vigente de los documentos y nadie escribe directo en ella. Cada cambio se hace en una rama corta, entra por una solicitud de integración y se fusiona después de revisarse. El plan completo está en las secciones 8.8 a 8.11 del SQAP.
 
 Cada cambio empieza con un issue que dice su origen, que puede ser una solicitud de cambio, una acción preventiva o una no conformidad. Después se siguen estas convenciones:
 

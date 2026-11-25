@@ -1,0 +1,10 @@
+# Archivos temporales de Office y del sistema
+~$*
+.~lock.*#
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Configuración local con valores reales
+.env
+*.env.local

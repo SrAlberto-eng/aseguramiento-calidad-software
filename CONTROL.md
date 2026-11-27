@@ -1,6 +1,6 @@
 ---
 tags: [aseguramiento, sqap, configuracion, 8igual1]
-actualizado: 2026-11-24
+actualizado: 2026-11-26
 responsable: Jorge Alberto Méndez Oseguera
 ---
 
@@ -24,6 +24,7 @@ Cada carpeta lleva el número del componente del SQAP al que da sustento.
 | `07_Pruebas` | El plan de pruebas, con sus casos y su ejecución |
 | `08_Configuracion` | El registro del estado de la configuración y los manifiestos de las líneas base |
 | `09_Problemas_acciones_y_mejora` | El análisis de causa raíz, con la matriz defecto-fuente |
+| `10_Seguimiento_y_registros` | El informe sobre la calidad lograda y la presentación ejecutiva del cierre del semestre |
 
 Dentro de cada carpeta, `obsoletas` guarda las versiones superadas de los elementos de configuración.
 
@@ -56,7 +57,7 @@ git checkout LB-SQAP-01
 sha256sum -c 08_Configuracion/LB-SQAP-01.sha256
 ```
 
-La auditoría física completa, que además revisa el registro del estado, los archivos sin registrar, los commits directos en `main` y los marcadores de conflicto, se hace desde un clon nuevo con `python3 08_Configuracion/verificar_linea_base.py LB-SQAP-04`, cambiando la etiqueta.
+La auditoría física completa, que además revisa el registro del estado, los archivos sin registrar, los commits directos en `main` y los marcadores de conflicto, se hace desde un clon nuevo con `python3 08_Configuracion/verificar_linea_base.py LB-SQAP-05`, cambiando la etiqueta.
 
 ## Control de versiones
 
